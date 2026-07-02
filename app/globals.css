@@ -1,35 +1,37 @@
 @import "tailwindcss";
 
 :root {
-  /* Professional retail palette — clean, trustworthy, commercial */
-  --background: #f7f9fc;
-  --foreground: #0f172a;
+  /* Brand palette: white + green, orange accents, subtle blue support */
+  color-scheme: light;
+  --background: #ffffff;
+  --foreground: #111111;
   --card: #ffffff;
-  --card-foreground: #0f172a;
+  --card-foreground: #111111;
   --popover: #ffffff;
-  --popover-foreground: #0f172a;
+  --popover-foreground: #111111;
 
-  --primary: #007a4d;
+  --primary: #0b8f55;
   --primary-foreground: #ffffff;
 
-  --secondary: #1e3a5f;
-  --secondary-foreground: #f1f5f9;
+  /* Small amount of blue for supporting surfaces/buttons */
+  --secondary: #1f4f8a;
+  --secondary-foreground: #ffffff;
 
-  --muted: #eef2f7;
-  --muted-foreground: #64748b;
+  --muted: #f7fbf8;
+  --muted-foreground: #2c2c2c;
 
-  --accent: #e8f5ee;
-  --accent-foreground: #005c3a;
+  --accent: #e9f7ef;
+  --accent-foreground: #0a6c42;
 
-  --promo: #e85d04;
+  --promo: #f97316;
   --promo-foreground: #ffffff;
 
   --destructive: #dc2626;
   --destructive-foreground: #ffffff;
 
-  --border: #e2e8f0;
-  --input: #e2e8f0;
-  --ring: #007a4d;
+  --border: #dce9e1;
+  --input: #dce9e1;
+  --ring: #0b8f55;
   --radius: 0.75rem;
 }
 
