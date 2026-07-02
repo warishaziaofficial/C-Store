@@ -12,6 +12,7 @@ import {
 import { siteConfig } from "@/lib/site-config";
 import { BrandLogo } from "@/components/layout/brand-logo";
 import { Separator } from "@/components/ui/separator";
+
 const footerLinks = {
   shop: [
     { href: "/products", label: "All Products" },
@@ -46,7 +47,6 @@ export function Footer() {
     <footer className="bg-secondary text-secondary-foreground">
       <div className="container mx-auto px-4 py-12 md:py-16">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
-          {/* Brand */}
           <div className="space-y-4">
             <Link href="/" className="flex items-center gap-2">
               <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-primary text-primary-foreground">
@@ -72,7 +72,6 @@ export function Footer() {
             </div>
           </div>
 
-          {/* Shop */}
           <div>
             <h3 className="font-semibold text-white mb-4">Shop</h3>
             <ul className="space-y-2.5">
@@ -89,7 +88,6 @@ export function Footer() {
             </ul>
           </div>
 
-          {/* Company */}
           <div>
             <h3 className="font-semibold text-white mb-4">Company</h3>
             <ul className="space-y-2.5">
@@ -106,7 +104,6 @@ export function Footer() {
             </ul>
           </div>
 
-          {/* Contact */}
           <div>
             <h3 className="font-semibold text-white mb-4">Contact</h3>
             <ul className="space-y-3">
@@ -129,7 +126,10 @@ export function Footer() {
         <Separator className="my-8 bg-white/10" />
 
         <div className="flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-secondary-foreground/60">
-          <p>&copy; {new Date().getFullYear()} {siteConfig.name}. All rights reserved.</p>
+          <p>
+            &copy; {new Date().getFullYear()} {siteConfig.name}. All rights
+            reserved.
+          </p>
           <div className="flex flex-wrap justify-center gap-4">
             {footerLinks.legal.map((link) => (
               <Link
