@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
-import { ShoppingCart, User, Menu, Store } from "lucide-react";
+import { ShoppingCart, User, Menu, Store, Search } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import { ProductSearch } from "@/components/products/product-search";
@@ -55,13 +55,13 @@ export function Navbar() {
           <div className="flex items-center gap-1 sm:gap-2">
             <Button
               variant="ghost"
-              size="sm"
+              size="icon"
               className="hidden sm:flex text-muted-foreground"
               onClick={() => setSearchOpen(!searchOpen)}
               aria-label="Toggle search"
               aria-expanded={searchOpen}
             >
-              Search
+              <Search className="h-5 w-5" />
             </Button>
             <Button variant="ghost" size="icon" aria-label="Shopping cart">
               <ShoppingCart className="h-5 w-5" />
